@@ -1,13 +1,108 @@
 {
   "schema_version": "1.0",
-  "week_start_jst": null,
-  "generated_at_jst": null,
+  "week_start_jst": "2026-10-12",
+  "decision_as_of_jst": "2026-10-11T19:00:00+09:00",
+  "generated_at_jst": "2026-10-17T22:52:44+09:00",
   "timezone": "Asia/Tokyo",
   "server_session": "23:00-01:00",
-  "publication_ready": false,
-  "days": [],
-  "sources": [],
+  "publication_ready": true,
+  "entry_control_scope": "新規エントリーのみ。既存ポジションの決済管理は継続。",
+  "days": [
+    {
+      "date_jst": "2026-10-13",
+      "session_jst": "05:00-07:00",
+      "EURUSD": "稼働",
+      "GBPUSD": "稼働",
+      "AUDUSD": "稼働",
+      "reasons": {
+        "EURUSD": "前夜20時以降に新規取引を停止するほどの主要イベントを事前確認できず。通常の連銀当局者講演単独では原則停止しない。",
+        "GBPUSD": "前夜20時以降に新規取引を停止するほどの主要イベントを事前確認できず。通常の連銀当局者講演単独では原則停止しない。",
+        "AUDUSD": "前夜20時以降に新規取引を停止するほどの主要イベントを事前確認できず。通常の連銀当局者講演単独では原則停止しない。"
+      },
+      "trigger_events": []
+    },
+    {
+      "date_jst": "2026-10-14",
+      "session_jst": "05:00-07:00",
+      "EURUSD": "稼働",
+      "GBPUSD": "稼働",
+      "AUDUSD": "稼働",
+      "reasons": {
+        "EURUSD": "前夜23時に米中古住宅販売が予定されるが、単独では停止対象の主要指標に当たらないため稼働。",
+        "GBPUSD": "前夜23時に米中古住宅販売が予定されるが、単独では停止対象の主要指標に当たらないため稼働。",
+        "AUDUSD": "前夜23時に米中古住宅販売が予定されるが、単独では停止対象の主要指標に当たらないため稼働。"
+      },
+      "trigger_events": []
+    },
+    {
+      "date_jst": "2026-10-15",
+      "session_jst": "05:00-07:00",
+      "EURUSD": "停止",
+      "GBPUSD": "停止",
+      "AUDUSD": "停止",
+      "reasons": {
+        "EURUSD": "前夜21時30分の米CPI・コアCPIは米ドルの最重要指標。翌朝までの変動リスクにより新規エントリーを停止。",
+        "GBPUSD": "前夜21時30分の米CPI・コアCPIは米ドルの最重要指標。翌朝までの変動リスクにより新規エントリーを停止。",
+        "AUDUSD": "前夜21時30分の米CPI・コアCPIは米ドルの最重要指標。翌朝までの変動リスクにより新規エントリーを停止。"
+      },
+      "trigger_events": [
+        {
+          "scheduled_at_jst": "2026-10-14T21:30:00+09:00",
+          "name": "米国CPI・コアCPI（2026年9月分）",
+          "affected_currencies": [
+            "USD"
+          ],
+          "source_url": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+        },
+        {
+          "scheduled_at_jst": "2026-10-15T03:00:00+09:00",
+          "name": "FRBベージュブック（地区連銀経済報告）",
+          "affected_currencies": [
+            "USD"
+          ],
+          "source_url": "https://www.federalreserve.gov/newsevents/2026-october.htm"
+        }
+      ]
+    },
+    {
+      "date_jst": "2026-10-16",
+      "session_jst": "05:00-07:00",
+      "EURUSD": "停止",
+      "GBPUSD": "停止",
+      "AUDUSD": "停止",
+      "reasons": {
+        "EURUSD": "前夜21時30分に米PPIと小売売上高が同時発表予定。米ドルへの複合的な影響を考慮し新規エントリーを停止。",
+        "GBPUSD": "前夜21時30分に米PPIと小売売上高が同時発表予定。米ドルへの複合的な影響を考慮し新規エントリーを停止。",
+        "AUDUSD": "前夜21時30分に米PPIと小売売上高が同時発表予定。米ドルへの複合的な影響を考慮し新規エントリーを停止。"
+      },
+      "trigger_events": [
+        {
+          "scheduled_at_jst": "2026-10-15T21:30:00+09:00",
+          "name": "米国PPI・コアPPI（2026年9月分）",
+          "affected_currencies": [
+            "USD"
+          ],
+          "source_url": "https://www.bls.gov/schedule/2026/10_sched_list.htm"
+        },
+        {
+          "scheduled_at_jst": "2026-10-15T21:30:00+09:00",
+          "name": "米国小売売上高（2026年9月分）",
+          "affected_currencies": [
+            "USD"
+          ],
+          "source_url": "https://www.census.gov/retail/release_schedule.html"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.bls.gov/schedule/2026/10_sched_list.htm",
+    "https://www.census.gov/retail/release_schedule.html",
+    "https://www.federalreserve.gov/newsevents/2026-october.htm",
+    "https://www.newyorkfed.org/research/calendars/i-oct26.html"
+  ],
   "uncertainties": [
-    "初期化状態です。対象週の検証済みスケジュールが公開されるまで、新規エントリーを許可しないでください。"
+    "判定は2026年10月11日19:00（JST）に確認可能だった事前の公表予定に基づく再現評価。発表結果・実際の値動き・EA実績は使っていない。",
+    "重要イベントの不意の変更・臨時発表は事前予定だけでは反映できない。"
   ]
 }
