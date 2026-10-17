@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "week_start_jst": null,
+  "generated_at_jst": null,
+  "timezone": "Asia/Tokyo",
+  "server_session": "23:00-01:00",
+  "publication_ready": false,
+  "days": [],
+  "sources": [],
+  "uncertainties": [
+    "初期化状態です。対象週の検証済みスケジュールが公開されるまで、新規エントリーを許可しないでください。"
+  ]
+}
